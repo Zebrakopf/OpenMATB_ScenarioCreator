@@ -1,0 +1,1 @@
+This script reads configuration files to create randomised scenarios for the OpenMATB python software.
