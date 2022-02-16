@@ -4,7 +4,7 @@ easy = {"lossA"          : 1000, #loss per minute of tank A
             "lossB"         : 1000, #loss per minute of tank A
             "flowStd"       : 1000, #flow from bottom tanks to top
             "flowBetween"   : 500, # flow from main tank connections
-            "tankTolerance" : 300, #tolerance zone of both tanks
+            "tankTolerance" : 600, #tolerance zone of both tanks
             "pumpFailN"     : 15, # number of pump failures
             "promptN"       : 5, #number of comm prompts
             "trackingRad"   : 0.3, # safezone of the tracking task
@@ -18,7 +18,7 @@ medium = {"lossA"          : 1000,
             "lossB"         : 1000,
             "flowStd"       : 600, #flow now doesn't match the loss rate anymore -> more strategising needed
             "flowBetween"   : 400, # same as above. The inbetween now have to be used to keep the tanks happy
-            "tankTolerance" : 300, # tolerance is slighlty lower -> need to keep a better eye on the tanks
+            "tankTolerance" : 600, # tolerance same
             "pumpFailN"     : 15, # more failures
             "promptN"       : 7, # slightly more prompts
             "trackingRad"   : 0.2, # smaller tracking radius -> affords more attention now
@@ -32,7 +32,7 @@ hard = {"lossA"          : 1300, # lossrate is now increased -> easier to fall o
             "lossB"         : 1300, # lossrate is now increased -> easier to fall out of tolerance zone
             "flowStd"       : 1000, # flow rate is also increased and doesn't match loss rate -> same as above
             "flowBetween"   : 1000, # flow rate is also increased and doesn't match loss rate -> same as above
-            "tankTolerance" : 300, # tolerance lowered again
+            "tankTolerance" : 600, # tolerance same
             "pumpFailN"     : 20, # even more pump failures
             "promptN"       : 10, # even more comm prompts
             "trackingRad"   : 0.15, # tracking radius even smaller

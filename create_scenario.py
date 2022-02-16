@@ -3,7 +3,7 @@ import random
 import sys
 import importlib
 #========================change variables here to modify scenario========================
-path_to_folder = "C:\\Users\\felix\\Documents\\python\\OpenMATB\\Scenarios"
+path_to_folder = "C:\\Users\\LJMU\\Documents\\Felix\\OpenMATB_ScenarioCreator"
 
 
 #define MATB length
@@ -206,7 +206,7 @@ for n_scenario in range(1,int(n_scenarios)+1):
     contents = START_LINES + FLOW_LINES + event_lines + END_LINES
     contents = [line + "\n" for line in contents]
     out_filename = "{cfg_file}_{diff}_{n}.txt".format(cfg_file = cfg_file, diff = diff, n = n_scenario)
-    print(path_to_folder + "\\" + out_filename,"w")
-    file = open(path_to_folder + "\\" + out_filename,"w")
+    print(path_to_folder + "\\Scenarios\\" + out_filename,"w")
+    file = open(path_to_folder + "\\Scenarios\\" + out_filename,"w")
     file.writelines(contents)
     file.close()
