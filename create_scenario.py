@@ -169,13 +169,13 @@ for n_scenario in range(1,int(n_scenarios)+1):
     #define all events
     event_lines = []
     safe_zone = config['safeZone']
-    prompt_safe_zone = 12
+    prompt_safe_zone = 20
     promptTime = TIMEPOINTS
     promptEvents = []
     for n in range(1,N_EVENTS['prompt']):
         timepoint_idx =  random.sample(range(buffer,len(promptTime) -buffer),1)[0]
         timepoint = promptTime[timepoint_idx]
-        tmp_target = random.sample(["own", "other"],1)[0]
+        tmp_target = random.choices(["own", "other"], weights = [3,1],k = 1)[0]
         promptTime = removeFromTime(promptTime, timepoint, timepoint_idx, prompt_safe_zone, promptEvents)
         promptEvents.append(timepoint)
         event_lines.append(make_param(write_time(timepoint), S_COMM, PARAMETERS['prompt'],tmp_target))
