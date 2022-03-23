@@ -7,7 +7,7 @@ path_to_folder = "C:\\Users\\LJMU\\Documents\\Felix\\OpenMATB_ScenarioCreator"
 
 
 #define MATB length
-total_mins = 4
+total_mins = 5
 total_secs = total_mins * 60
 buffer = 15 #seconds at the start and end where no events will be placed (safety measure for communication prompts and possibly unfair scale failures towards the end)
 
@@ -136,6 +136,7 @@ START_LINES = [
     "0:00:00;communications;othercallsignnumber;5",
     "0:00:00;communications;voicegender;male",
     "0:00:00;communications;voiceidiom;english",
+    "0:00:00;labstreaminglayer;start",
     "0:00:00;pumpstatus;start",
     "0:00:00;resman;start",
     "0:00:00;track;start",
