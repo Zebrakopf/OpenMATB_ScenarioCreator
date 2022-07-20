@@ -4,10 +4,11 @@ import sys
 import importlib
 #========================change variables here to modify scenario========================
 path_to_folder = "C:\\Users\\LJMU\\Documents\\Felix\\OpenMATB_ScenarioCreator"
+path_to_folder = "C:\\Users\\felix\\Desktop\\LJMU\\Scripts\\Python\\OpenMATB_ScenarioCreator"
 
 
 #define MATB length
-total_mins = 5
+total_mins = 3
 total_secs = total_mins * 60
 buffer = 15 #seconds at the start and end where no events will be placed (safety measure for communication prompts and possibly unfair scale failures towards the end)
 
@@ -164,6 +165,7 @@ END_LINES = [
     "{};sysmon;stop".format(write_time(total_secs)),
     "{};communications;stop".format(write_time(total_secs)),
     "{};scheduling;stop".format(write_time(total_secs)),
+    "{};labstreaminglayer;stop".format(write_time(total_secs)),
     "{};end".format(write_time(total_secs + 1)),
 ]
 for n_scenario in range(1,int(n_scenarios)+1):
